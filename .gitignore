@@ -3,9 +3,9 @@ int main( void )
 {
     int tvd, tvy, kg, yas, bsa, isa, usa, dsa, hb,tekke,tekkk ;
     char cns,e,k;
-    printf("hastanin kilosunu giriniz>\n");
+    printf("Hastanin kilosunu giriniz>\n");
     scanf("%d", &kg);
-    printf("hastanin hemoglobin'ini TAM SAYI olarak giriniz>\n");
+    printf("Hastanin Hematokrit'ini TAM SAYI olarak giriniz>\n");
 	scanf("%d",&hb);
     bsa=(kg+40)*4+kg+40+kg;
 	isa=(kg+40)*2+kg+40+kg;
@@ -13,7 +13,7 @@ int main( void )
 	dsa=kg+40+kg;
 	tekke=2.15*(hb-30)*kg;
 	tekkk=1.95*(hb-30)*kg;
-    printf("sivi acigi> %d /%d /%d /%d\n", bsa, isa,usa,dsa);
+    printf("Sivi acigi> %d /%d /%d /%d\n", bsa, isa,usa,dsa);
     printf("TEKK kadin> %d, TEKK erkek> %d", tekkk,tekke);
     
     fflush(stdin);
