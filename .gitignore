@@ -2,6 +2,8 @@
 int main( void )
 {
     int tvd, tvy, kg, yas, bsa, isa, usa, dsa, hb,tekke,tekkk ;
+    int ibsa, iisa, iusa, idsa;
+    int ubsa,uisa,uusa,udsa;
     char cns,e,k;
     printf("Hastanin kilosunu giriniz>\n");
     scanf("%d", &kg);
@@ -11,10 +13,24 @@ int main( void )
 	isa=(kg+40)*2+kg+40+kg;
 	usa=(kg+40)*2+kg+40+kg;
 	dsa=kg+40+kg;
+	ibsa=(kg+40)*4+2*kg+40+kg;
+	iisa=(kg+40)*2+2*kg+40+kg;
+	iusa=(kg+40)*2+2*kg+40+kg;
+	idsa=kg+40+2*kg;
+	ubsa=(kg+40)*4+3*kg+40+kg;
+	uisa=(kg+40)*2+3*kg+40+kg;
+	uusa=(kg+40)*2+3*kg+40+kg;
+	udsa=kg+40+3*kg;
 	tekke=2.15*(hb-30)*kg;
 	tekkk=1.95*(hb-30)*kg;
-    printf("Sivi acigi> %d /%d /%d /%d\n", bsa, isa,usa,dsa);
-    printf("TEKK kadin> %d, TEKK erkek> %d", tekkk,tekke);
+	tvd=kg*6;
+	tvy=kg*8;
+    printf("Birinci Dereceden Kanamada Sivi Acigi> %d /%d /%d /%d\n", bsa, isa,usa,dsa);
+    printf("Ikinci Dereceden Kanamada Sivi Acigi> %d /%d /%d /%d\n", ibsa, iisa, iusa, idsa);
+    printf("Ucuncu Dereceden Kanamada Sivi Acigi> %d /%d /%d /%d\n",ubsa, uisa,uusa,udsa);
+    printf("TEKK kadin> %d, TEKK erkek> %d\n", tekkk,tekke);
+    printf("tidal volum: %d - %d", tvd, tvy);
+    
     
     fflush(stdin);
         getchar();
